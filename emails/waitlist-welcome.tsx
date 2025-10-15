@@ -9,6 +9,8 @@ import {
   Section,
   Text,
   Hr,
+  Img,
+  Column,
 } from "@react-email/components";
 
 interface WaitlistWelcomeEmailProps {
@@ -25,9 +27,32 @@ export default function WaitlistWelcomeEmail({
       <Body style={main}>
         <Container style={container}>
           <Section style={terminalHeader}>
+            {/* <Text style={terminalBorder}>
+              ╔════════════════════════════════════════╗
+            </Text> */}
             <Section style={headerContent}>
-              <Text style={terminalTitle}>enops.dev</Text>
+              <table role="presentation" style={{ borderCollapse: "collapse" }}>
+                <tbody>
+                  <tr>
+                    <td style={{ verticalAlign: "middle" }}>
+                      <Img
+                        src="https://www.enops.dev/plogo.png"
+                        width="40"
+                        height="40"
+                        alt="enops.dev"
+                        style={logo}
+                      />
+                    </td>
+                    <td style={{ verticalAlign: "middle", paddingLeft: "8px" }}>
+                      <Text style={terminalTitle}>enops.dev</Text>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </Section>
+            {/* <Text style={terminalBorder}>
+              ╚════════════════════════════════════════╝
+            </Text> */}
           </Section>
 
           {/* Command-line style welcome message */}
@@ -150,13 +175,25 @@ const terminalHeader = {
   marginBottom: "32px",
 };
 
+const terminalBorder = {
+  color: "#10b981", // Emerald green
+  fontSize: "12px",
+  lineHeight: "16px",
+  margin: "0",
+  fontFamily: "monospace",
+};
+
 const headerContent = {
   padding: "12px 0",
 };
 
+const logo = {
+  borderRadius: "6px",
+};
+
 const terminalTitle = {
   color: "#10b981",
-  fontSize: "20px",
+  fontSize: "40px",
   fontWeight: "700" as const,
   margin: "0",
   letterSpacing: "0.5px",

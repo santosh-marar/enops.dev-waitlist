@@ -32,19 +32,19 @@ export default function Page() {
 
       const data = await res.json();
 
-       if (!res.ok) {
-         // Handle duplicate email (409)
-         if (res.status === 409) {
-           toast.error("Already registered", {
-             description: data.message,
-             duration: 4000,
-             style: toastStyles.error,
-           });
-         } else {
-           throw new Error(data.message || "Failed to submit email");
-         }
-         return;
-       }
+      if (!res.ok) {
+        // Handle duplicate email (409)
+        if (res.status === 409) {
+          toast.error("Already registered", {
+            description: data.message,
+            duration: 4000,
+            style: toastStyles.error,
+          });
+        } else {
+          throw new Error(data.message || "Failed to submit email");
+        }
+        return;
+      }
 
       toast.success("Waitlist confirmed", {
         description: `Welcome to enops.dev, ${email}`,
@@ -75,7 +75,7 @@ export default function Page() {
         {/* Logo */}
         <div className="flex items-center justify-center w-full mx-auto mb-8">
           <Image src="/plogo.png" alt="enops.dev" width={48} height={48} />
-          <h1 className="text-4xl font-bold text-white ml-2">enops.dev</h1>
+          <h1 className="text-5xl font-bold text-white ml-2">enops.dev</h1>
         </div>
 
         {/* Hero Text Animation */}

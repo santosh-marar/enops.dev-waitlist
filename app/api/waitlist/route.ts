@@ -33,13 +33,13 @@ export async function POST(req: NextRequest) {
 
     const existingEmails = existingData.data.values || [];
     const emailExists = existingEmails.some(
-      (row) => row[0]?.toLowerCase().trim() === normalizedEmail
+      (row) => row[0]?.toLowerCase().trim() === normalizedEmail,
     );
 
     if (emailExists) {
       return NextResponse.json(
         { message: "You're already on the waitlist!" },
-        { status: 409 } // 409 Conflict
+        { status: 409 }, // 409 Conflict
       );
     }
 
@@ -64,13 +64,13 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(
       { message: "Added to waitlist!" },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (err) {
     console.error(err);
     return NextResponse.json(
       { message: "Something went wrong" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
