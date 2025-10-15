@@ -1,10 +1,12 @@
-# 🚀 Enops.dev Waitlist
+# Enops.dev Waitlist
+
+<img width="256" height="256" alt="plogo" src="https://github.com/user-attachments/assets/1a281589-93ca-43ad-9b7a-60ee1762b039" />
 
 A beautiful, terminal-themed waitlist landing page for **enops.dev** - an AI-powered schema generation platform. Built with Next.js 15, React Email, and integrated with Google Sheets and Resend.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?style=flat-square&logo=tailwind-css)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?style=flat-square&logo=tailwind-css)
 
 ## ✨ Features
 
