@@ -34,7 +34,7 @@ export default function Page() {
        if (!res.ok) {
          // Handle duplicate email (409)
          if (res.status === 409) {
-           toast.error("✗ Already registered", {
+           toast.error("Already registered", {
              description: data.message,
              duration: 4000,
              style: toastStyles.error,

@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "enops.dev",
   description:
-    "Enops.dev is a platform for AI-powered data visualization and exploration.",
+    "Enops.dev is a AI-powered schema generation, visualization, and schema exploration tool. It uses AI model to generate schemas from natural language, and then visualize and explore and export the schema using Prisma, Drizzle, and DBML.",
   keywords:
-    "AI, Data, Visualization, Exploration, Postgres, Drizzle, Prisma, DBML",
+    "AI, Schema, Visualization, Exploration, Postgres, Drizzle, Prisma, DBML",
 };
 
 export default function RootLayout({
