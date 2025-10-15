@@ -53,8 +53,9 @@ export const LayoutTextFlip = ({
       </div>
 
       {/* Subtext */}
-      <p className="text-white/80 font-mono text-sm md:text-base mx-auto pt-2">
-        // Join the waitlist to get early access to <span className="text-emerald-500 font-bold">enops.dev</span>
+      <p className="text-white/80 font-mono text-sm md:text-base mx-auto ">
+        // Join the waitlist to get early access to{" "}
+        <span className="text-emerald-500 font-bold">enops.dev</span>
       </p>
     </div>
   );

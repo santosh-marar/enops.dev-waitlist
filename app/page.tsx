@@ -12,6 +12,7 @@ import { LayoutTextFlip } from "@/components/ui/layout-text-flip";
 import { Features } from "@/components/ui/feature-card";
 import { toast } from "sonner";
 import { toastStyles } from "@/lib/toast-style";
+import Image from "next/image";
 
 export default function Page() {
   const [email, setEmail] = useState("");
@@ -71,6 +72,12 @@ export default function Page() {
       </div>
 
       <main className="flex flex-col items-center justify-center flex-grow px-4 text-center  pt-20 pb-16 max-w-4xl mx-auto">
+        {/* Logo */}
+        <div className="flex items-center justify-center w-full mx-auto mb-8">
+          <Image src="/plogo.png" alt="enops.dev" width={48} height={48} />
+          <h1 className="text-4xl font-bold text-white ml-2">enops.dev</h1>
+        </div>
+
         {/* Hero Text Animation */}
         <LayoutTextFlip
           text="<Schema/> with AI"
